@@ -78,17 +78,17 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Max pooling	      	| 2x2 stride, valid padding, outputs 5x5x16 				|
 | Flatten	      	| input 5x5x16, outputs 400	|
-| Fully connected		| input 400, output 120	|
+| Fully connected		| input 400, outputs 120	|
 | RELU					|												|
-| Fully connected		| input 120, output 84	|
+| Fully connected		| input 120, outputs 84	|
 | RELU					|												|
-| Fully connected		| input 84, output 43	|
+| Fully connected		| input 84, outputs 43 (number of classes)	|
  
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+To train the model, I coded a version of LeNet. Used batch size of 128 and ran it for 15 of epochs. Learning rate was set to 0.0005.
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
