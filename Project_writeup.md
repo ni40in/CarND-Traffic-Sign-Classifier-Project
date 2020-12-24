@@ -78,11 +78,11 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Max pooling	      	| 2x2 stride, valid padding, outputs 5x5x16 				|
 | Flatten	      	| input 5x5x16, outputs 400	|
-| Fully connected		| input 400, outputs 120	|
+| Fully connected		| input 400, outputs 200	|
 | RELU					|												|
-| Fully connected		| input 120, outputs 84	|
+| Fully connected		| input 200, outputs 100	|
 | RELU					|												|
-| Fully connected		| input 84, outputs 43 (number of classes)	|
+| Fully connected		| input 100, outputs 43 (number of classes)	|
  
 
 
@@ -93,16 +93,20 @@ To train the model, I coded a version of LeNet. Used batch size of 128 and ran i
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of 99.7%
+* validation set accuracy of 93.3%
+* test set accuracy of 91.8%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+Initially i went LeNet architecture.
 * What were some problems with the initial architecture?
+the highest accuracy I was able to achieve was about 90.5%. I've introduced some minor changes in the fully connected layers but not sure if the effect was significant. 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 * Which parameters were tuned? How were they adjusted and why?
+I've changed learning rate and batch size. Lower learning rate and larger number of epochs helped to achieve the result.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+Haven't used the dropout because was able to achieve desired accuracy. Can guess that dropout can help against overfitting so the network will get better at generalizing.
 
 If a well known architecture was chosen:
 * What architecture was chosen?
