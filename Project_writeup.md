@@ -22,11 +22,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/hist.png "Visualization"
 [image2]: ./examples/random_sign.png "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./examples/1.jpeg "Traffic Sign 1"
+[image5]: ./examples/2.jpeg "Traffic Sign 2"
+[image6]: ./examples/3.jpeg "Traffic Sign 3"
+[image7]: ./examples/5.jpeg "Traffic Sign 4"
+[image8]: ./examples/6.jpeg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -131,11 +131,11 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Speed limit (30 km/h)      		| Speed limit (30 km/h)   									| 
+| Road work     			| Road work 										|
+| Right-of-way at the next intersection					| Right-of-way at the next intersection											|
+| Fork	      		| Speed limit (80 km/h)					 				|
+| Railroad intersection			| Slippery Road      							|
 
 
 The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
