@@ -117,7 +117,7 @@ Here are five German traffic signs that I found on the web:
 
 <img src="./examples/1.jpeg" alt="Traffic Sign 1" height="150"> <img src="./examples/2.jpeg" alt="Traffic Sign 2" height="150"> <img src="./examples/3.jpeg" alt="Traffic Sign 3" height="150"> <img src="./examples/5.jpeg" alt="Traffic Sign 4" height="150"> <img src="./examples/6.jpeg" alt="Traffic Sign 5" height="150">
 
-The first image might be difficult to classify because ...
+All the images were of good quality and shoudn't pose any difficulties for the model to predict them correctly. I had to resize and center crop the images to have them in correct size for the model consumption.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -128,25 +128,26 @@ Here are the results of the prediction:
 | Speed limit (30 km/h)      		| Speed limit (30 km/h)   									| 
 | Road work     			| Road work 										|
 | Right-of-way at the next intersection					| Right-of-way at the next intersection											|
-| Fork	      		| Speed limit (80 km/h)					 				|
+| Go straight or right	      		| Speed limit (80 km/h)					 				|
 | Railroad intersection			| Slippery Road      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+First three images were predicted correctly but the third one is completely wrong. Such sign is present in the training set, so i have no reasonable explanation about why the prediction is so off.
+The last image prediction might be off because of the resizing and these two signs actually do look somewhat alike, especially when blurry/low res.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For some reason, the model was 100% confident when giving predictions to the web test images. I coudln't find the root cause of the problem
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1         			| Speed limit (30 km/h)   									| 
+| 1     				| Road work 										|
+| 1					| Right-of-way at the next intersection											|
+| 1	      			| Go straight or right					 				|
+| 1				    | Railroad intersection      							|
 
 
 For the second image ... 
