@@ -120,7 +120,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][<img src="./examples/1.jpeg" height="100">]
+![<img src="./examples/1.jpeg" alt="Traffic Sign 1" height="150">]
 ![alt text][image5]
 ![alt text][image6] 
 ![alt text][image7]
