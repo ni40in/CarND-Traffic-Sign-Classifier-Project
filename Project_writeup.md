@@ -22,11 +22,6 @@ The goals / steps of this project are the following:
 [image1]: ./examples/hist.png "Visualization"
 [image2]: ./examples/random_sign.png "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/1.jpeg "Traffic Sign 1"
-[image5]: ./examples/2.jpeg "Traffic Sign 2"
-[image6]: ./examples/3.jpeg "Traffic Sign 3"
-[image7]: ./examples/5.jpeg "Traffic Sign 4"
-[image8]: ./examples/6.jpeg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -120,11 +115,7 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-<img src="./examples/1.jpeg" alt="Traffic Sign 1" height="150">
-<img src="./examples/2.jpeg" alt="Traffic Sign 2" height="150">
-<img src="./examples/3.jpeg" alt="Traffic Sign 3" height="150">
-<img src="./examples/5.jpeg" alt="Traffic Sign 4" height="150">
-<img src="./examples/6.jpeg" alt="Traffic Sign 5" height="150">
+<img src="./examples/1.jpeg" alt="Traffic Sign 1" height="150"> <img src="./examples/2.jpeg" alt="Traffic Sign 2" height="150"> <img src="./examples/3.jpeg" alt="Traffic Sign 3" height="150"> <img src="./examples/5.jpeg" alt="Traffic Sign 4" height="150"> <img src="./examples/6.jpeg" alt="Traffic Sign 5" height="150">
 
 The first image might be difficult to classify because ...
 
